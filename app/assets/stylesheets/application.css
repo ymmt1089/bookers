@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+/*common*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #6c6b6b;
+}
+a{
+	text-decoration: none;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+body{
+	margin: 0 auto;
+}
+table th{
+	color: black;
+	padding: 7px 100px;
+}
+
+table tr{
+	color: black;
+	padding: 7px 100px;
+}
+table{
+	padding: 7px auto;
+	font-size: 13px;
+	text-align: center;
+}
+
+
+h1{
+	color: black;
+}
+h2{
+	color: black;
+}
+h3{
+	color: black;
+}
+h4{
+	color: black;
+}
+
+
