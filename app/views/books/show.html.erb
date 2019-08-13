@@ -1,11 +1,22 @@
-<p id="notice">
-	<%= notice %>
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<title>show</title>
+</head>
 
-<h2>Title</h2>
-<p><%= @book.title %></p>
-<h2>Body</h2>
-<p><%= @book.body %></p>
+<body>
+	<p id="notice"><%= notice %></p>
 
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Back" ,books_path %>
+	<p><strong>Title : </strong>
+		<%= @book.title %></p>
+	<p><strong>Body : </strong>
+		<%= @book.body %></p>
+
+		<a><%= link_to "Edit", edit_book_path(@book.id) %></a>
+		|
+		<a><%= link_to "Back" ,books_path %></a>
+</body>
+</html>

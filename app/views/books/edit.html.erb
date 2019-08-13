@@ -1,13 +1,31 @@
-<p id="notice">
-	<%= notice %>
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<title>edit</title>
+</head>
 
-<h1>Editing Book</h1>
+<body>
+	<p id="notice"><%= notice %></p>
+	<h1>Editing Book</h1>
 
-<%= form_for(@book,url:"/books/#{@book.id}") do |f| %>
-	<h4>Title</h4>
-	<%= f.text_field :title %>
-	<h4>Body</h4>
-	<%= f.text_area :body %>
-	<%= f.submit 'Update Book' %>
-<% end %>
+	<div class="form_block">
+		<%= form_for(@book,url:"/books/#{@book.id}") do |f| %>
+		<label>Title</label>
+		<div class="form_title">
+			<%= f.text_field :title %>
+		</div>
+		<label>Body</label>
+		<div class="form_body">
+			<%= f.text_area :body %>
+		</div>
+		<%= f.submit 'Update Book' %>
+		<% end %>
+	</div>
+	<a><%= link_to "Show", book_path(@book.id) %></a>
+	|
+	<a><%= link_to "Back" ,books_path %></a>
+</body>
+</html>

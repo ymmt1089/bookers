@@ -23,28 +23,51 @@
 }
 a{
 	text-decoration: none;
+	color: black;
 }
 .clearfix::after{
 	content: "";
 	display: block;
 	clear: both;
 }
+p{
+	font-size: 13px;
+	margin: 30px;
+}
+strong{
+	font-weight: bold;
+	color: black;
+}
+label{
+	font-size: 13px;
+}
+#notice{
+	color: green;
+}
 body{
-	margin: 0 auto;
+	margin: 30px;
 }
-table th{
+thead{
 	color: black;
 	padding: 7px 100px;
+	text-align: center;
 }
+tbody{
 
-table tr{
+
+}
+th{
 	color: black;
-	padding: 7px 100px;
+}
+tr{
+	color: black;
+}
+td{
+	padding-left: 10px;
+	padding-top: 7px;
 }
 table{
-	padding: 7px auto;
 	font-size: 13px;
-	text-align: center;
 }
 
 
@@ -52,13 +75,28 @@ h1{
 	color: black;
 }
 h2{
+	padding-top: 7px;
+	padding-bottom: 7px;
 	color: black;
 }
 h3{
+	padding-top: 7px;
+	padding-bottom: 7px;
 	color: black;
 }
 h4{
 	color: black;
 }
 
-
+.form_block{
+	margin-top: 20px;
+}
+.form_title{
+	margin-top: 7px;
+}
+.form_body{
+	margin-top: 7px;
+}
+.form_create{
+	margin-top: 7px;
+}
